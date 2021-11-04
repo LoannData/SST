@@ -1,0 +1,13 @@
+V1  - Détermination test de F(k) pour la phase WNM de l'ISM
+V2 et V3 - Détermination de tous les F(E) pour les phases WNM, CNM, DiM, DeM, DeC. Quelques améliorations pour V3
+V4  - On recommence tous les calculs avec une fonction de distribution bien plus précise 
+V5  - Ajout de la composante d'amortissement : viscosité des neutres - Résolution de la relation de dispersion générale de Xu+2015b
+V6  - Mise en forme du code : Plots propres et calculs corrects.
+V7  - Tentative foireuse d'optimisation du code
+V8  - Tentative réussie d'optimisation du code. 
+V9  - Ajout de la fonction permettant de calculer le coefficient de diffusion des rayons cosmiques et enfin de déterminer le libre parcours moyen de ces derniers
+V10 - Changement de la condition de résonnace : généralisation suivant la relation (13.1.38) de Schlickeiser - Ca ne marche pas totalement, l'integrale diverge à haute énergie. Et à faible énergie on a la même chose que dans le cas d'une résonnance en delta de dirac.
+V11 - Calcul du niveau de turbulence directionnel (fct de mu).
+V12 - Production de tous les graphes pour le compte rendu + les 4 méthodes de calcul du niveau de turbulence. -> Sans succes car les turbulences directionnelles ne sont pas calculables
+V13 - Du coup, calcul des coefficients de diffusion Dmumu à partir de la méthode de Schlickeiser 
+

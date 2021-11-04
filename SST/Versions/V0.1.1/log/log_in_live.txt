@@ -1,0 +1,7 @@
+########################################################
+Fichier de suivi du module 'main.py' créé !
+Création de l'espace des phases
+Création du fichier : dispersion_alfven.dat
+99.96 % - Time : 0.0 j 0.0 h 0.0 m 0.0 s 
+Création du fichier : magnetic-fine-slab_Dmumu2d.dat
+0.168 % - Time : 0.0 j 0.0 h 0.0 m 4.0 s 

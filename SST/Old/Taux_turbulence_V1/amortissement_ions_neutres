@@ -1,0 +1,23 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{physics} %Physics.sty
+\author{Loann Brahimi}
+\title{Calcul du taux d'amortissement des ondes de Alfvén par collisions ions-neutres}
+\begin{document}
+\maketitle 
+
+Dans ce document nous allons calculer le coefficient d'amortissement des ondes de Alfvén par collisions des ions avec les neutres dans le cadre d'un milieu faiblement ionisé. On écrit dans un premier temps la relation de dispersion des ondes de Alfvén incluant un amortissement suivant les collisions neutre-ion et la viscosité des neutres. On a (Xu 2015) :
+
+\begin{equation}
+	\omega^3 + i\left({\tau_v}^{-1} + (1+\khi)\nu_{ni}\right)\omega^2 - \left(k^2\cos^2\theta {V_{Ai}}^2 + \khi{\tau_v}^{-1}\nu_{ni}\right)\omega - i\left({\tau_v}^{-1} + \nu_{ni}\right)k^2\cos^2\theta {V_{Ai}}^2 = 0
+\end{equation}
+
+
+\end{document}

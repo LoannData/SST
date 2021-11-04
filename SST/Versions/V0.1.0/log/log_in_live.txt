@@ -1,0 +1,7 @@
+########################################################
+Fichier de suivi du module 'main.py' créé !
+Création de l'espace des phases
+Création du fichier : dispersion_alfven.dat
+99.996 % - Time : 0.0 j 0.0 h 0.0 m 5.0 s 
+Création du fichier : dispersion_fast.dat
+99.98 % - Time : 0.0 j 0.0 h 7.0 m 7.0 s 

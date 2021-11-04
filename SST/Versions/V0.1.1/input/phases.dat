@@ -1,0 +1,8 @@
+#CGS 
+Phase	Temperature	Magnetic field	Ionisation rate	Total density	Dominant Neutral	Dominant Ion
+WIM	8000	2e-6	0.9	0.15	93%H+7%He	H^+
+WNM	6000	5e-6	7e-3	0.2	93%H+7%He	H^+
+CNM	50	6e-6	4e-4	20	93%H+7%He	C^+
+DiM	30	4.89e-6	5e-4	100	46.5%H+46.5%H_2+7%He	C^+
+DeM	10	13.9e-6	1e-4	500	93%H_2+7%He	HCO^+
+DeC	10	21.8e-6	1e-6	1e3	93%H_2+7%He	HCO^+

@@ -1,0 +1,80 @@
+##############################################################
+#  CODE MODELISATION DE LA TURBULENCE GENEREE PAR LES RCS    #
+#  SST : Small Scale Turbulence                              #
+##############################################################
+#            Log des modifications                           #
+--------------------------------------------------------------
+
+##############################################################
+--------------------------------------------------------------
+Version 0.0.1 - (16/06/2017)
+--------------------------------------------------------------
+	- Version initiale :
+	- Ajout des fonctions de base
+	- Fonction d'amortissement exact par collisions ions-neutres
+	- Niveau de turbulence pour une résonance fine
+	- Coefficients de Fokker-Planck D_mumu pour une résonnance fine
+	- Coefficients de diffusion spatial K_zz
+	- Programme pour tracer les résultats.
+--------------------------------------------------------------
+Version 0.0.2 - (20/06/2017)
+--------------------------------------------------------------
+	- Ajout de la résonnance de Lorentz dans le calcul des coefficients de diffusion
+	- Ajout du module timing.py pour ajouter une fonction pourcentage
+--------------------------------------------------------------
+Version 0.0.3 - (22/06/2017)
+--------------------------------------------------------------
+	- Ajout d'un système de pointeurs pour simplifier l'utilisation du code
+	- Réajustement de la structure du code pour tenir compte des phénomènes supplémentaires
+--------------------------------------------------------------
+Version 0.0.4 - (23/06/2017)
+--------------------------------------------------------------
+	- Ajout d'un fichier log permettant de faire tourner le code sur une machine externe et de suivre l'avancement de ce dernier.
+--------------------------------------------------------------
+Version 0.0.5 - (29/06/2017)
+--------------------------------------------------------------
+	- Correction du calcul des coefficients de diffusion en résonnance (approximation de faible amortissement ion-neutres)
+--------------------------------------------------------------
+Version 0.0.6 - (12/07/2017)
+--------------------------------------------------------------
+	- Implémentation d'une fonction permettant de résoudre la relation de dispersion des modes magnétosoniques. Le problème est qu'il est impossible de différentier les modes slow des modes fast.
+--------------------------------------------------------------
+Version 0.0.7 - (14/07/2017)
+--------------------------------------------------------------
+	- Arrangements de la structure du code mais rien de spécial.
+--------------------------------------------------------------
+Version 0.0.8 - (27/07/2017)
+--------------------------------------------------------------
+	- Ajout d'un fichier "test2.py" permettant de résoudre numériquement la relation de dispersion des modes MS.
+	- Ajout d'une fonction permettant d'interpoler une série de données.
+	- Implémentation des fonctions permettant de calculer la turbulence Fast
+--------------------------------------------------------------
+Version 0.0.9 - (19/09/2017)
+--------------------------------------------------------------
+	- Modification des fonctions de calcul de turbulence 
+	- Ecriture des relations de dispersion Alfven & Fast dans des fichiers adaptés
+	- Ajout des calculs de coefficients de diffusion Afven+Fast 
+--------------------------------------------------------------
+Version 0.1.0 - (09/10/2017)
+--------------------------------------------------------------
+	- Amélioration du fichier de tracé des graphes (ajout d'un script plotfunc.py)
+--------------------------------------------------------------
+Version 0.1.1 - 
+--------------------------------------------------------------
+	- Ajout du terme d'interaction FG amélioré par Lazarian 2016
+--------------------------------------------------------------
+Version 0.1.2 - (19/01/2018)
+--------------------------------------------------------------
+	- Réorganisation du code : déplacement des scripts dans des dossiers associées, réorganisation du fichier main.py en un dossier. 
+
+
+
+
+
+
+
+
+
+
+
+

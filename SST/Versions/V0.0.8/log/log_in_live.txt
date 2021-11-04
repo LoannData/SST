@@ -1,0 +1,7 @@
+########################################################
+Fichier de suivi du module 'main.py' créé !
+Création de l'espace des phases
+Création du fichier : standard_indamping_fast.dat
+99.99 % - Time : 0.0 j 0.0 h 14.0 m 44.0 s 
+Création du ficher : fast-fine-slab_turbulence.dat
+99.8 % - Time : 0.0 j 0.0 h 0.0 m 9.0 s 

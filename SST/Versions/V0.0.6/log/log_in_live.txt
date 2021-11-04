@@ -1,0 +1,13 @@
+########################################################
+Fichier de suivi du module 'main.py' créé !
+Création de l'espace des phases
+Création du fichier : magnetic-large-slab_turbulence.dat
+99.8 % - Time : 0.0 j 0.0 h 0.0 m 28.0 s 
+Création du fichier : magnetic-large-slab_Dmumu1d.dat
+99.9333333333 % - Time : 0.0 j 0.0 h 1.0 m 5.0 s 
+Création du fichier : magnetic-large-slab_Dmumu2d.dat
+3333.26666667 % - Time : 0.0 j 0.0 h 31.0 m 11.0 s 
+Création du fichier : magnetic-large-slab-kappazz.dat
+99.8 % - Time : 0.0 j 1.0 h 32.0 m 49.0 s 
+Création du fichier : magnetic-large-slab-lpm.dat
+99.8 % - Time : 0.0 j 0.0 h 48.0 m 33.0 s 

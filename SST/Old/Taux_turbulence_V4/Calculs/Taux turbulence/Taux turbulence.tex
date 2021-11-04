@@ -1,0 +1,128 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Loann Brahimi}
+\title{Forme optimisée du taux de croissance }
+\begin{document}
+
+Wiener et al. a calculé un taux de croissance des ondes de Alfvén pour une fonction de distribution quasi-isotrope en angle d'attaque (formule (23)) donnée par : 
+
+\begin{eqnarray}
+	\Gamma_g(k) & = & - \frac{8\pi^2 m\Omega_0 V_A}{k (\delta B)^2_k} \int^{+\infty}_{p_k} \dd p v(p) \pdv{f(p)}{z} (p^2 - p_k^2) \\
+	            & = & - \frac{1}{W_{B_0}} \frac{\pi m \Omega_0 V_A c}{k b_k^2} \frac{A(k)}{4\pi} \pdv{n_{CR}}{z} 
+\end{eqnarray}
+
+où 
+
+\begin{eqnarray}
+	W_{B_0} & = & \frac{B_0^2}{8\pi} \\ 
+	A(k)    & = & \frac{4\pi}{n_{CR}} \int^{+\infty}_{p_k} \dd p \beta(p) f(p) (p^2 - p^2_k) 
+\end{eqnarray}
+
+$W_{B_0}$ correspond à la densité d'énergie magnétique. $\beta (p)$ est une fonction que nous allons déterminer. On a : 
+
+\begin{equation}
+	\beta (p) = \frac{ v(p)}{c} = \sqrt{1 - \frac{1}{\gamma (p)}^2 } 
+\end{equation}
+
+et 
+
+\begin{equation}
+	\gamma (p) = \left( 1 - \left( \frac{v(p)}{c} \right)^2 \right)^{-\frac{1}{2}} 
+\end{equation}
+
+On a $\beta^2 \gamma^2 = \gamma^2 - 1$ et $p = \gamma \beta mc = \sqrt{\gamma^2 -  1}mc$ soit $p/mc = \sqrt{\gamma^2 - 1}$. On normalise l'impulsion par une valeur $p_0 = mc$ telle que : 
+
+\begin{equation}
+	\bar{p} = \frac{p}{p_0} = \sqrt{\gamma^2 - 1}
+\end{equation}
+
+c'est à dire : $\gamma^2 = \bar{p}^2 + 1$ et comme on a $\beta = \sqrt{1 - \gamma^{-2}}$ on en déduit : 
+
+\begin{equation}
+	\beta (p) = \frac{\bar{p}}{\sqrt{\bar{p}^2 + 1}}
+\end{equation}
+
+On cherche à exprimer le gradient de pression $\pdv{P_{CR}}{z}$ au lieu de celui en densité $\pdv{n_{CR}}{z}$. Pour cela on exprime $n_{CR}$. 
+
+\begin{eqnarray}
+	n_{CR} & = & 4\pi \int^{+\infty}_{p_k} \dd p p^2 f(p) \\ 
+	       & = & 4\pi f_0 \int^{+\infty}_{p_k} \dd p p^2 k(p) \\ 
+	       & = & 4\pi f_0 p_0^3 \int^{+\infty}_{p_k/p_0} \dd\bar{p} ~ \bar{p}^2 k(\bar{p}) \\
+	       & = & 4\pi f_0 p_0^3 H
+\end{eqnarray}
+
+où 
+
+\begin{equation}
+	H = \int^{+\infty}_{p_k/p_0} \dd\bar{p} ~ \bar{p}^2 k(\bar{p})
+\end{equation}
+
+On exprime également $P_{CR}$. 
+
+\begin{eqnarray}
+	P_{CR} & = & \frac{4 \pi c}{3} \int^{+\infty}_{p_k} \dd p~p^3 f(p) \beta{p} \\
+           & = & \frac{4 \pi c}{3} f_0 p_0^4 \int^{+\infty}_{p_k} \dd \bar{p}~\bar{p}^3 k(\bar{p}) \beta(\bar{p}) \\ 
+           & = & \frac{4 \pi c}{3} f_0 p_0^4 G
+\end{eqnarray}
+
+où 
+
+\begin{eqnarray}
+	G & = & \int^{+\infty}_{p_k} \dd \bar{p}~\bar{p}^3 k(\bar{p}) \beta(\bar{p}) \\ 
+	\beta(\bar{p}) & = & \frac{\bar{p}}{\sqrt{\bar{p}^2 + 1}} 
+\end{eqnarray}
+
+On a alors la relation : 
+
+\begin{equation}
+	n_{CR} = \frac{3 P_{CR}}{c} \frac{H}{G} \frac{1}{p_0}
+\end{equation}
+
+qui, en injectant dans la définition du taux de croissance nous donne l'expression suivante (ici $k^{-1} = r_g$) : 
+
+\begin{equation}
+	\Gamma_g(r_g) = \frac{3}{4} \Omega_0 \left(V_A \frac{mc}{p_0c} \right) \frac{A(k)}{b_k^2} \frac{H}{G} \left[ \frac{r_g}{W_{B_0}} \left( - \pdv{P_{CR }}{z} \right) \right] 
+\end{equation}
+
+avec les différentes relations : 
+
+\begin{eqnarray}
+	A(k)    & = & \frac{4\pi}{n_{CR}} f_0 p_0^3 \int^{+\infty}_{p_k/p_0} \dd \bar{p} \beta(\bar{p}) k(\bar{p}) (\bar{p}^2 - \bar{p}^2_k)  \\ 
+	H & = & \int^{+\infty}_{p_k/p_0} \dd\bar{p} ~ \bar{p}^2 k(\bar{p}) \\ 
+	G & = & \int^{+\infty}_{p_k} \dd \bar{p}~\bar{p}^3 k(\bar{p}) \beta(\bar{p}) \\
+	\beta(\bar{p}) & = & \frac{\bar{p}}{\sqrt{\bar{p}^2 + 1}} 
+\end{eqnarray}
+	
+En utilisant la condition $\Gamma_g + \Gamma_{in} = 0$ on peut contraindre le niveau de turbulence en fonction du gradient de pression de rayons cosmiques. 
+
+\begin{equation}
+	b_k = \sqrt{\frac{1}{-\Gamma_{in}} \frac{3}{4} \Omega_0 \left( V_A \frac{mc}{p_0c} \right) A(r_g) \left( \frac{r_g}{W_{B_0}} \frac{H}{G} \left[-\pdv{P_{CR}}{z} \right] \right) }
+\end{equation}
+
+Il s'agit maintenant de choisir la forme de la fonction de distribution des rayons cosmiques adaptée au problème. Drury et Strong 2016 ont choisi une fonction de la forme : 
+
+\begin{equation}
+	J(T) = 0.27(\mathrm{cm}^{-2}~\mathrm{s}^{-1}~\mathrm{st}^{-1}~\mathrm{GeV}^{-1})\frac{T^{1.12}}{\beta^2} \left( \frac{T+0.67}{1.67} \right)^{-3.93}
+\end{equation}
+
+où $T = E_{kin}/1~\mathrm{GeV}$ soit $T = \frac{mc^2}{1~\mathrm{GeV}} (\sqrt{1 + (p/p_0)^2}-1)$ et $\dv{T}{p} = \frac{mc^2}{p_0} \frac{p/p_0}{\sqrt{1 + (p/p_0)^2 }}$. On rappelle que l'on a défini $p_0c = mc^2$. On peut alors réécrire la fonction $f(p)$ comme :
+
+\begin{equation}
+	f(\bar{p}) = f_0 k(\bar{p})~~ f_0 = \frac{0.27}{p_0^3}
+\end{equation}
+
+\begin{equation}
+	k(p) = \frac{1}{\bar{p}^2} \frac{({mc^2}_{1~\mathrm{GeV}}[\sqrt{1+\bar{p}^2} - 1])^{1.12}}{\beta^2(\bar{p})} \left( \frac{{mc^2}_{1~\mathrm{GeV}}[\sqrt{1+\bar{p}^2} - 1] + 0.67}{1.67} \right)^{-3.93} \frac{0.938\bar{p}}{\sqrt{1 + \bar{p}^2}}
+\end{equation}
+
+où ${mc^2}_{1~\mathrm{GeV}}$ correspond à l'énergie de masse des CRs normalisée par $1~\mathrm{GeV}$. 
+
+\end{document}

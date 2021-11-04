@@ -1,0 +1,5 @@
+########################################################
+Fichier de suivi du module 'main.py' créé !
+Création de l'espace des phases
+Création du fichier : fast-fine-slab-kappazz.dat
+99.8 % - Time : 0.0 j 0.0 h 44.0 m 27.0 s 

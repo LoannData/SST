@@ -1,0 +1,7 @@
+########################################################
+Fichier de suivi du module 'main.py' créé !
+Creation de l'espace des phases
+Création du ficher : magnetic-fine-slab_turbulence.dat
+99.8 % - Time : 0.0 j 0.0 h 0.0 m 6.0 s 
+Création du fichier : magnetic-fine-slab_Dmumu1d.dat
+99.8 % - Time : 0.0 j 0.0 h 0.0 m 4.0 s 
